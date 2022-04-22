@@ -3,6 +3,8 @@
 import React from 'react';
 import styled from 'styled-components';
 
+import theme from '../theme/index';
+
 const Character = (props) => {
     const { character } = props;
     return (
@@ -17,7 +19,39 @@ const Character = (props) => {
 }
 
 const StyledCharacter = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100vw;
 
+    color: ${theme.white};
+
+    transition: all .3s ease-in-out;
+    &:hover {
+        background-color: ${theme.black};
+        transition: all .3s ease-in-out;
+    }
+
+    h2 {
+        color: turquoise;
+        color: ${theme.primaryColor};
+    }
+
+    h3 {
+        color: ${theme.secondaryColor};
+    }
+
+    h4 {
+        color: ${theme.tertiaryColor};
+    }
+
+    h5 {
+        color: ${theme.quaternaryColor};
+    }
+
+    h6 {
+        color: ${theme.quinaryColor};
+    }
 `
 
 export default Character;

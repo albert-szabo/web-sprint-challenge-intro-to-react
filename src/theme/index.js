@@ -1,5 +1,5 @@
 
-export default {
+ let theme = {
     primaryColor: 'turquoise',
     secondaryColor: 'purple',
     tertiaryColor: 'yellow',
@@ -8,3 +8,6 @@ export default {
     black: 'black',
     white: 'white'
 }
+
+
+export default theme

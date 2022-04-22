@@ -41,10 +41,10 @@ Your finished project must include all of the following requirements:
 - [ ] Render your characters to the DOM:
 
   1. Build a React component named 'Character' to render an individual character.
-  1. Map over the list in state, and for each character render a Character to the page.
-  1. Each rendered character must display its name in the DOM (e.g. "Luke Skywalker").
-  1. The character's name can't be hard-coded into the HTML. This data must be obtained from the API.
-  1. The components must be styled with **styled-components**.
+  2. Map over the list in state, and for each character render a Character to the page.
+  3. Each rendered character must display its name in the DOM (e.g. "Luke Skywalker").
+  4. The character's name can't be hard-coded into the HTML. This data must be obtained from the API.
+  5. The components must be styled with **styled-components**.
 
   **Notes:**
 
@@ -79,6 +79,17 @@ After finishing your required elements, you can push your work further. These go
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. Put your answers underneath the questions:
 
 1. What is React JS and what problems does it solve? Support your answer with concepts introduced in class and from your personal research on the web.
-1. Describe component state.
-1. Describe props.
-1. What are side effects, and how do you sync effects in a React component to changes of certain state or props?
+
+React is a JavaScript library developed by Facebook that allows developers to abstract away the tedious piece-by-piece manual DOM manipulation and easily build advanced user interfaces with components. React also allows developers to build more performant projects by using state and its virtual DOM to only re-render those components that need to be updated after some change, usually from user interaction.
+
+2. Describe component state.
+
+Component state refers to data that lives in the component.
+
+3. Describe props.
+
+Props refers to data passed from parent (component) to child (component).
+
+4. What are side effects, and how do you sync effects in a React component to changes of certain state or props?
+
+Side effects affect something beyond the scope of the function being run. Effects in a React component can be synced by different uses of the dependency array.
