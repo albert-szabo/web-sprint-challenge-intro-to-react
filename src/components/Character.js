@@ -3,6 +3,7 @@
 import React from 'react';
 
 const Character = (props) => {
+    const { characters } = props;
     return (
         <div className='character-wrapper'>
             <h2>{props.name}</h2>
